@@ -1,33 +1,29 @@
 @charset "UFT-8";
-@font-face {
-    font-family:"pixelbold";
-    src: url("fontes/dogicapixelbold.ttf") format("truetype");
-}
-@font-face {
-    font-family: pixel;
-    src: url("fontes/Retro\ Gaming.ttf");
-}
-
 
 *{  
     font-family:"arial";
     padding: 0%;
     margin: 0%;
-    
+}
+:root{
+    --corback: #2a2828;
+    --cordestaque: #2B91D9;
+    --corsombra: #0000008a;
+    --cordestaque2:#DE9D64;
 }
 body{
-    background-color: #2a2828;
+    background-color: var(--corback);
 
 }
 header{
-    background-color: #2a2828;
+    background-color: var(--corback);
     height: 75px;
     border-bottom: 1px solid #524f4f;
 
 }
 header > #inicio{
-   color: #2B91D9 ;
-   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.545);
+   color: var(--cordestaque) ;
+   text-shadow: 2px 2px 2px var(--corsombra);
    position: absolute;
    left: 120px;
    top: 20px;
@@ -44,7 +40,7 @@ nav li{
 nav a{
     color: white;
     font-size: 1.2em;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.542);
+    text-shadow: 2px 2px 2px var(--corsombra);
     text-decoration: none;
     padding-left: 50px;
 }
@@ -52,21 +48,64 @@ main{
     padding: 180px 150px;
     
 }
-#sou{
+#princ{
     color: white;
+    text-shadow: 2px 2px 2px var(--corsombra);
+}
+#princ #sou{
     font-size: 3em;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.542);
     width: 200px;
 }
 #nome{
-    color: #2B91D9;
+    color: var(--cordestaque);
     font-size: 5em;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.542);
+    text-shadow: 3px 3px 3px var(--corsombra);
     padding: 10px 25px;
 }
 #front{
-    color:white;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.542);
+    font-size: 3em;
     padding-left: 90px;
+}
+#princ li{
+    display: inline;
+}
+#princ a{
+    display: inline;
+    font-size: 1.5em;
+    color:white;
+    text-decoration: none;
+    
+}
+article{
+    color: white;
+    font-size: 1em;
+    text-align: justify;
+    margin-top: 300px;
+}
+article h2{
+    text-shadow: 3px 3px 3px var(--corsombra);
+    margin-bottom: 30px;
+    color: var(--cordestaque2);
+    font-size: 3.5em;
+    position: absolute;
+    margin-top: 100px;
+
+
+}
+article p{
+    text-indent: 20px;
+    text-shadow: 1px 1px 2px var(--corsombra);
+    width: 600px;
+    font-weight: 500;
+    line-height: 30px;
+    position: absolute;
+    margin-top: 200px;
+}
+article img{
+    margin-left: 700px;
+    margin-top: 40px;
+    border: 2px solid white;
+    padding: 10px;
+
+    
 }
