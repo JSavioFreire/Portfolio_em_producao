@@ -1,15 +1,22 @@
 @charset "UFT-8";
+@font-face {
+    font-family: pixel;
+    src: url("fontes/VCR_OSD_MONO_1.001.ttf") format("truetype");
+}
 
 *{  
-    font-family:"arial";
+    font-family:"pixel";
     padding: 0%;
     margin: 0%;
 }
 :root{
-    --corback: #2a2828;
-    --cordestaque: #2B91D9;
-    --corsombra: #0000008a;
-    --cordestaque2:#DE9D64;
+    --corback:#2a2828;
+    --corsombra:#0000008a;
+    --cordestaque1:#2B96D9;
+    --cordestaque2:#EB9217;
+    --cordestaque3:#EB4647;
+    --cordestaque4:#23EB5B;
+    --cordestaque5:#2FEBCE;
 }
 body{
     background-color: var(--corback);
@@ -18,11 +25,11 @@ body{
 header{
     background-color: var(--corback);
     height: 75px;
-    border-bottom: 1px solid #524f4f;
+    border-bottom: 1px solid var(--cordestaque5);
 
 }
 header > #inicio{
-   color: var(--cordestaque) ;
+   color: var(--cordestaque1) ;
    text-shadow: 2px 2px 2px var(--corsombra);
    position: absolute;
    left: 120px;
@@ -45,37 +52,131 @@ nav a{
     padding-left: 50px;
 }
 main{
-    padding: 180px 150px;
+    margin: 150px 130px;
+    max-width: 1100px;
+    min-width: 320px;
+    margin: auto;
     
 }
 #princ{
     color: white;
-    text-shadow: 2px 2px 2px var(--corsombra);
+    text-shadow: 3px 3px 3px var(--corsombra);
 }
 #princ #sou{
+    margin-top: 190px;
     font-size: 3em;
     width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #nome{
-    color: var(--cordestaque);
+    color: var(--cordestaque1);
     font-size: 5em;
-    text-shadow: 3px 3px 3px var(--corsombra);
+    text-shadow: 4px 4px 4px var(--corsombra);
     padding: 10px 25px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #front{
     font-size: 3em;
     padding-left: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
+#princ a{
+    text-decoration: none;
+}
+
 #princ li{
     display: inline;
 }
-#princ a{
+#in{
+    width: 100px;
+    margin-top: 30px;
+    margin-left: 250px;
+}
+#git{
+    width: 60px;
+    margin-left: 100px;
+    
+
+
+}
+#projetos{
+    text-align: center;
+}
+#projetos h2{
+    font-family: pixel;
+    color: var(--cordestaque2);
+    font-size: 4em;
+    margin-top: 300px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 2px var(--corsombra);
+}
+#fotos{
+    max-width: 1500px;
+    min-width: 300px;
+    width: 100%;   
     display: inline;
-    font-size: 1.5em;
-    color:white;
-    text-decoration: none;
+
+}
+#fotos img{
+    width: 220px;
+    border: 2px solid var(--cordestaque2);
+    padding: 5px;
+    box-shadow: 3px 3px 3px var(--corsombra);
+    margin:20px;
+}
+
+
+#xp h2{
+    margin-top: 300px;
+    font-size: 4em;
+    text-align: center;
+    color: var(--cordestaque3);
+    text-shadow: 2px 2px 2px var(--corsombra);
+    margin-bottom: 25px;
+}
+#xp img{
+    
+    width: 80px;
+    height: 80px;
+    box-shadow: 3px 3px 3px var(--corsombra);
+    background-color: #201e1e;
+    display: inline;
+}
+.hab{
+    display: inline-block;
+    margin: 10px 10px;
+    border: 3px solid var(--cordestaque3);
+    padding: 5px;
+    box-shadow: 2px 2px 2px var(--corsombra);
+    
     
 }
+
+
+.moeda{
+    width: 10px;
+
+    border: 3px solid var(--cordestaque3);
+    display: inline;
+    border: none;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 article{
     color: white;
     font-size: 1em;
@@ -84,10 +185,8 @@ article{
 }
 article h2{
     text-shadow: 3px 3px 3px var(--corsombra);
-    margin-bottom: 30px;
-    color: var(--cordestaque2);
+    color: var(--cordestaque4);
     font-size: 3.5em;
-    position: absolute;
     margin-top: 100px;
 
 
@@ -95,17 +194,40 @@ article h2{
 article p{
     text-indent: 20px;
     text-shadow: 1px 1px 2px var(--corsombra);
-    width: 600px;
-    font-weight: 500;
+    max-width: 500px;
+    font-weight: 500px;
     line-height: 30px;
-    position: absolute;
-    margin-top: 200px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
 }
 article img{
-    margin-left: 700px;
-    margin-top: 40px;
-    border: 2px solid white;
+
+    border: 2px solid var(--cordestaque4);
+    outline: 1px solid white;
     padding: 10px;
+    max-width: 400px;
+    width: 100%;
+    margin-left: 35px;
 
     
+
+
+    
+}
+
+
+
+footer{
+    background-color: black;
+    color:white;
+    text-align: left;
+    margin-top: 100px;
+    font-size: 0.6em;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+footer h1{
+    font-size: 1em;
 }
