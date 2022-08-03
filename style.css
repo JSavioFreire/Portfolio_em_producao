@@ -26,31 +26,46 @@ header{
     background-color: var(--corback);
     height: 75px;
     border-bottom: 1px solid var(--cordestaque5);
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
 
 }
 header > #inicio{
    color: var(--cordestaque1) ;
    text-shadow: 2px 2px 2px var(--corsombra);
-   position: absolute;
-   left: 120px;
-   top: 20px;
+   display: inline-block;
+
+
     
 }
 header > nav{
-    position: absolute;
-    right: 120px;
-    top: 26px
+    text-align: right;
+    max-width: 1100px;
+    min-width: 320px;
+    margin: auto;
+
 }
 nav li{
-    display: inline;
+    display: inline-block;
 }
 nav a{
     color: white;
     font-size: 1.2em;
     text-shadow: 2px 2px 2px var(--corsombra);
     text-decoration: none;
-    padding-left: 50px;
+    padding: 10px;
+    transition-duration: 0.5s;
 }
+nav a:hover{
+    background-color: var(--cordestaque5);
+    color: black;
+    text-shadow:none;
+    border-radius: 5px; 
+}
+
+
+
 main{
     margin: 150px 130px;
     max-width: 1100px;
@@ -61,6 +76,7 @@ main{
 #princ{
     color: white;
     text-shadow: 3px 3px 3px var(--corsombra);
+    padding-left: 10px;
 }
 #princ #sou{
     margin-top: 190px;
@@ -74,6 +90,8 @@ main{
     text-shadow: 4px 4px 4px var(--corsombra);
     padding: 10px 25px;
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 500px;
+    min-width: 320px;
 }
 #front{
     font-size: 3em;
@@ -92,6 +110,7 @@ main{
     width: 100px;
     margin-top: 30px;
     margin-left: 250px;
+    margin-inline-start: 80px;
 }
 #git{
     width: 60px;
@@ -132,33 +151,40 @@ main{
     text-align: center;
     color: var(--cordestaque3);
     text-shadow: 2px 2px 2px var(--corsombra);
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 #xp img{
     
     width: 80px;
-    height: 80px;
     box-shadow: 3px 3px 3px var(--corsombra);
     background-color: #201e1e;
-    display: inline;
+    height: 80px;
+ 
+}
+#xp ul{
+    columns: 2;
+    list-style-type: none;
+    
 }
 .hab{
     display: inline-block;
-    margin: 10px 10px;
     border: 3px solid var(--cordestaque3);
-    padding: 5px;
     box-shadow: 2px 2px 2px var(--corsombra);
+    margin-top: 5px;
+
+ 
     
     
 }
 
 
 .moeda{
-    width: 10px;
+
 
     border: 3px solid var(--cordestaque3);
     display: inline;
     border: none;
+    height: 50px;
     
     
 }
@@ -191,7 +217,7 @@ article h2{
 
 }
 article p{
-    text-indent: 20px;
+    text-indent: 30px;
     text-shadow: 1px 1px 2px var(--corsombra);
     max-width: 500px;
     font-weight: 500px;
@@ -200,6 +226,11 @@ article p{
     font-family: Arial, Helvetica, sans-serif;
     
 
+}
+article strong{
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 article img{
 
