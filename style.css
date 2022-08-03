@@ -135,20 +135,21 @@ main{
     margin-bottom: 70px;
     text-shadow: 2px 2px 2px var(--corsombra);
 }
-#fotos{
-    max-width: 1500px;
-    min-width: 300px;
-    width: 100%;   
-    display: inline;
 
-}
 #fotos img{
     width: 220px;
     border: 2px solid var(--cordestaque2);
     padding: 5px;
     box-shadow: 3px 3px 3px var(--corsombra);
-    margin:20px;
+    margin:25px;
 }
+#fotos img:hover{
+    width: 300px;
+    margin: -15px;
+    padding: 5px;
+    transition-duration: 0.5s;
+}
+
 
 
 #xp h2{
@@ -167,6 +168,7 @@ main{
     height: 80px;
  
 }
+
 #xp ul{
     columns: 2;
     list-style-type: none;
