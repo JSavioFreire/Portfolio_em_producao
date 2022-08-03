@@ -23,12 +23,17 @@ body{
 
 }
 header{
-    background-color: var(--corback);
-    height: 75px;
+    background-color: #2febcf40;
+    backdrop-filter: blur(10px);
+    height: 60px;
     border-bottom: 1px solid var(--cordestaque5);
     padding-top: 20px;
     padding-left: 50px;
     padding-right: 50px;
+    width: 100%;
+    position: fixed;
+    margin-top: -195px;
+
 
 }
 header > #inicio{
@@ -37,13 +42,14 @@ header > #inicio{
    display: inline-block;
 
 
+
     
 }
 header > nav{
     text-align: right;
-    max-width: 1100px;
-    min-width: 320px;
+    max-width: 1000px;
     margin: auto;
+
 
 }
 nav li{
@@ -231,6 +237,7 @@ article strong{
     text-decoration: underline;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 article img{
 
