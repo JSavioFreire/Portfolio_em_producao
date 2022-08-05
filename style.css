@@ -22,6 +22,9 @@ body{
     background-color: var(--corback);
 
 }
+
+    /*Cabeçalho*/
+
 header{
     background-color: #2febcf40;
     backdrop-filter: blur(10px);
@@ -70,7 +73,7 @@ nav a:hover{
     border-radius: 5px; 
 }
 
-
+/*Título*/
 
 main{
     margin: 150px 130px;
@@ -122,7 +125,7 @@ main{
     width: 60px;
     margin-left: 100px;
     
-
+/* Projetos */
 
 }
 #projetos{
@@ -148,9 +151,10 @@ main{
     margin: -15px;
     padding: 5px;
     transition-duration: 0.5s;
+    cursor: pointer;
 }
 
-
+/*Habilidades*/
 
 #xp h2{
     margin-top: 300px;
@@ -193,22 +197,9 @@ main{
     display: inline;
     border: none;
     height: 50px;
-    
-    
-}
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
+/*Sobre mim*/
 
 article{
     color: white;
@@ -249,14 +240,9 @@ article img{
     max-width: 400px;
     width: 100%;
     margin-left: 35px;
-
-    
-
-
-    
 }
 
-
+/*Rodapé*/
 
 footer{
     background-color: black;
