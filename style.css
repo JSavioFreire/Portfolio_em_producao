@@ -141,6 +141,7 @@ main{
 
 #fotos img{
     width: 220px;
+    height: 150px;
     border: 2px solid var(--cordestaque2);
     padding: 5px;
     box-shadow: 3px 3px 3px var(--corsombra);
@@ -148,6 +149,7 @@ main{
 }
 #fotos img:hover{
     width: 300px;
+    height: 200px;
     margin: -15px;
     padding: 5px;
     transition-duration: 0.5s;
