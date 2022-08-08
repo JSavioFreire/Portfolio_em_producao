@@ -13,10 +13,10 @@
         <h1 id="inicio">/*Sávio Freire*/</h1>
         <nav>
             <ul id="menu" type="">
-                <li><a href="@">Home</a></li>   
-                <li><a href="@">Projetos</a></li>
-                <li><a href="@">Habilidades</a></li>
-                <li><a href="@">Sobre mim</a></li>
+                <li><a href="#princ">Home</a></li>   
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#xp">Habilidades</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
             </ul>
         </nav>
     </header>
@@ -82,7 +82,7 @@
         </div>
 
         <article>
-            <h2>Sobre mim:</h2>
+            <h2 id="sobre">Sobre mim:</h2>
             <p>Hello, meu nome é Sávio Freire, tenho 23 anos, sou casado e sou um amante de tecnologia. Tenho como objetivo ser um desenvolvedor Full-Stack, mas por enquanto estou começando pelo Front-end. Gosto muito de me desafiar, e como um nerdola nato, sempre gostei de quebra-cabeças e jogo difíceis, acredito que seja por isso que me apaixonei pela programação; Como em um game por exemplo, são nas áreas mais complicadas e desafiadoras que encontramos as maiores recompensas, e pra mim, nada é mais recompensador do que ver o meu site bonitão, meu código lindo e tudo funcionando corretamente. Estou no primeiro período do curso de <strong>Análise e Desenvolvimento de Sistemas</strong> na Universidade Estácio de Sá. Estou buscando novos desafios e adquirir experiência na área de desenvolvimento Front-end.</p>
             <img src="fotos/foto para trabalho.jpg" alt="euniver">
         </article>
@@ -93,5 +93,18 @@
         <h1>Site criado por Sávio Freire.</h1>
         <p>E-mail: freiresavio7@gmail.com</p>
     </footer>
+
+    <script>
+        const menu = document.querySelectorAll('#menu')
+        menu.forEach(a => {
+            menu.addEventListener('click', clicou)
+        });
+        function clicou(){
+    
+        
+        }
+        
+
+    </script>
 </body>
 </html>
